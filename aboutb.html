@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css_about/main.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap-grid.min.css">
+    <title>aboutb</title>
+</head>
+<body>
+    <a name="vrh"></a>
+    <header>
+        <div class="sakri">
+          <button class="hamburger-menu" aria-label="Toggle menu">&#9776;</button>
+          <div class="dropdown">
+            <div class="dropdown-content">
+              <ul>
+                <li><a href="prrints.html">PRINTS</a></li>
+                <li><a href="paintedb.html">BROJAČ</a></li>
+                <li><a href="https://www.instagram.com/brendannorth">INSTAGRAM</a></li>
+                <li><a href="aboutb.html">ABOUT</a></li>
+                <li><a href="contactb.html">CONTACT</a></li>
+                <li><a href="linksb.html">LINKS</a></li>
+                <li><a href="beginningsb.html">CRUD</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="navigacija">
+          <nav>
+            <ul>
+              <li><a href="prrints.html">PRINTS</a></li>
+              <li><a href="paintedb.html">BROJAČ</a></li>
+              <li><a href="https://www.instagram.com/brendannorth">INSTAGRAM</a></li>
+              <li><a href="aboutb.html">ABOUT</a></li>
+              <li><a href="contactb.html">CONTACT</a></li>
+              <li><a href="linksb.html">LINKS</a></li>
+              <li><a href="beginningsb.html">CRUD</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="brendan">
+          <a href="prrints.html">BRENDAN NØRTH</a>
+        </div>
+      </header>
+      
+      <div class="theme-toggle">
+  <button id="themeButton">🌞</button>
+</div>
+
+      
+    <section class="sredina">
+        <h2 class="sakri"><a href="prrints.html">BRENDAN NØRTH</a></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <img src="img/about slika.JPG" alt="" width="100%">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <h1>BRENDAN NØRTH</h1>
+                    <p>Brendan North is a fine art photographer based in Los Angeles. Having built a social media presence of nearly 1 million people, Brendan is one of the most recognized photographers in the world. He specializes in portraiture and conceptual photography.</p>
+                    <br>
+                    <p>Brendan has created a signature style that captures the glamorous side of society while offering commentary on issues at the same time. He believes that the future of photography lies with the artists who truly have something to say. From images of a virtual paradise to visions of a world dripping in gold, his photos have a voice of their own. Finding success in the art world, his prints and NFTs have been purchased by collectors across the globe.</p>
+                    <br>
+                    <p class="zadnji">In addition to his own personal work as an artist, Brendan has years of experience in model test shoots, editorial assignments, and brand photography. He is available to book upon request.</p>
+                    <div class="contract">
+                        <a class="cont" href="">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="top">
+        <!--<a href="#vrh" class="">Back to top</a>-->
+    </div>
+    <footer>
+        <p>contact: bookings@brendan-north.com</p>
+    </footer>
+    
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function () {
+          const dropdownContent = document.querySelector('.dropdown-content');
+          dropdownContent.classList.toggle('active');
+        });
+      </script>
+
+      <script>
+        const themeButton = document.getElementById('themeButton');
+const currentTheme = localStorage.getItem('theme');
+
+// Ako postoji prethodni izbor, učitaj ga
+if (currentTheme === 'dark') {
+  document.body.classList.add('dark-theme');
+  themeButton.textContent = '🌙';
+} else {
+  themeButton.textContent = '🌞';
+}
+
+themeButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-theme');
+  
+  if (document.body.classList.contains('dark-theme')) {
+    localStorage.setItem('theme', 'dark');
+    themeButton.textContent = '🌙';
+  } else {
+    localStorage.setItem('theme', 'light');
+    themeButton.textContent = '🌞';
+  }
+});
+
+      </script>
+      
+      
+</body>
+</html>

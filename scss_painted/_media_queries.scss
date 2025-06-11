@@ -1,0 +1,45 @@
+@import 'variables';
+
+@media screen and (max-width: 992px) {
+  .top {
+    clear: both;
+    text-align: center;
+    display: block;
+    padding-top: $spacing-xlarge;
+
+    a {
+      text-decoration: none;
+      color: $grey-color;
+      font-size: $font-size-large;
+    }
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
+  .sakriti {
+    display: block;
+  }
+  
+  .sakri {
+    display: block;
+  }
+  
+  .navigacija {
+    display: none;
+  }
+  
+  .brendan {
+    display: none;
+  }
+  
+  header {
+    width: 100%;
+  }
+  
+  .naslov {
+    display: block;
+    padding-bottom: 40px;
+  }
+}

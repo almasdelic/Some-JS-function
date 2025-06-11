@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css_painted/main.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap-grid.min.css">
+    <title>Painted series</title>
+</head>
+<a name="vrh"></a>
+<header>
+    <div class="sakri">
+      <button class="hamburger-menu" aria-label="Toggle menu">&#9776;</button>
+      <div class="dropdown">
+        <div class="dropdown-content">
+          <ul>
+            <li><a href="prrints.html">PRINTS</a></li>
+            <li><a href="paintedb.html">BROJAČ</a></li>
+            <li><a href="https://www.instagram.com/brendannorth">INSTAGRAM</a></li>
+            <li><a href="aboutb.html">ABOUT</a></li>
+            <li><a href="contactb.html">CONTACT</a></li>
+            <li><a href="linksb.html">LINKS</a></li>
+            <li><a href="beginningsb.html">CRUD</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="navigacija">
+      <nav>
+        <ul>
+          <li><a href="prrints.html">PRINTS</a></li>
+          <li><a href="paintedb.html">BROJAČ</a></li>
+          <li><a href="https://www.instagram.com/brendannorth">INSTAGRAM</a></li>
+          <li><a href="aboutb.html">ABOUT</a></li>
+          <li><a href="contactb.html">CONTACT</a></li>
+          <li><a href="linksb.html">LINKS</a></li>
+          <li><a href="beginningsb.html">CRUD</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="brendan">
+      <a href="prrints.html">BRENDAN NØRTH</a>
+    </div>
+  </header>
+
+  <div class="theme-toggle">
+  <button id="themeButton">🌞</button>
+</div>
+
+  
+    <section class="sredina">
+        <div class="naslov"><h1><a href="prrints.html">BRENDAN NØRTH</a></h1></div>
+        
+    </section>
+    <div class="top">
+        <a href="#vrh">Back to top</a>
+    </div>
+
+    <div class="page-counter">
+  Ova stranica je učitana <span id="visitCount">0</span> puta.
+</div>
+
+<div class="reset-counter">
+    <button id="resetButton">Resetuj brojač</button>
+</div>
+    <footer>
+        <p>contact: bookings@brendan-north.com</p>
+    </footer>
+<body>
+
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function () {
+          const dropdownContent = document.querySelector('.dropdown-content');
+          dropdownContent.classList.toggle('active');
+        });
+      </script>
+      
+      <script>
+        const themeButton = document.getElementById('themeButton');
+const currentTheme = localStorage.getItem('theme');
+
+// Ako postoji prethodni izbor, učitaj ga
+if (currentTheme === 'dark') {
+  document.body.classList.add('dark-theme');
+  themeButton.textContent = '🌙';
+} else {
+  themeButton.textContent = '🌞';
+}
+
+themeButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-theme');
+  
+  if (document.body.classList.contains('dark-theme')) {
+    localStorage.setItem('theme', 'dark');
+    themeButton.textContent = '🌙';
+  } else {
+    localStorage.setItem('theme', 'light');
+    themeButton.textContent = '🌞';
+  }
+});
+
+      </script>
+
+     <script>
+    // Brojač posjeta
+    let visitCount = localStorage.getItem('paintedVisitCount');
+    if (!visitCount) {
+        visitCount = 1;
+    } else {
+        visitCount = parseInt(visitCount) + 1;
+    }
+    localStorage.setItem('paintedVisitCount', visitCount);
+    document.getElementById('visitCount').textContent = visitCount;
+
+    // Reset dugme
+document.getElementById('resetButton').addEventListener('click', function() {
+    localStorage.setItem('paintedVisitCount', 0);
+    document.getElementById('visitCount').textContent = 0;
+});
+</script>
+    
+</body>
+</html>

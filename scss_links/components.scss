@@ -1,0 +1,75 @@
+@import 'variables';
+
+.sredina {
+  text-align: center;
+  padding-top: $spacing-xlarge;
+}
+
+.naslov {
+  text-align: center;
+  display: none;
+}
+
+h1 {
+  padding-top: $spacing-base;
+  padding-bottom: 65px;
+  font-size: $font-size-h1;
+  font-weight: lighter;
+
+  a {
+    text-decoration: none;
+    font-size: $font-size-large;
+    color: $primary-color;
+    font-weight: 400;
+  }
+}
+
+h2 {
+  padding-bottom: $spacing-base;
+  font-size: $font-size-h2;
+}
+
+.padding {
+  padding-top: $spacing-base;
+}
+
+.book {
+  padding-bottom: $spacing-large;
+  font-size: $font-size-medium;
+}
+
+.contact {
+  width: 115px;
+}
+
+.button {
+  text-decoration: none;
+  border-width: $border-width;
+  border-color: $border-color;
+  border-style: solid;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 15px;
+  color: $primary-color;
+  display: block;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $background-color;
+  }
+}
+
+span {
+  font-weight: lighter;
+}
+
+footer {
+  padding-top: $spacing-large;
+  padding-bottom: $spacing-large;
+  text-align: right;
+
+  p {
+    font-size: $font-size-base;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,30 @@
+@import 'variables';
+
+.sredina {
+  width: 100%;
+  padding-top: 70px;
+  float: none;
+}
+
+.naslov {
+  text-align: center;
+  display: none;
+}
+
+h1 a {
+  text-decoration: none;
+  font-size: $font-size-large;
+  color: $primary-color;
+  font-weight: 400;
+}
+
+footer {
+  padding-top: $spacing-large;
+  padding-bottom: $spacing-large;
+  text-align: right;
+
+  p {
+    font-size: $font-size-base;
+    font-weight: bold;
+  }
+}

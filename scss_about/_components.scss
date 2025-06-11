@@ -1,0 +1,61 @@
+@import 'variables';
+@import 'mixins';
+
+.sredina {
+  max-width: $width-80;
+  padding-top: $padding-top-xxxxlarge;
+  float: none;
+
+  p {
+    line-height: 1.8;
+    font-size: $font-size-xxsmall;
+    font-weight: 500;
+  }
+}
+
+.zadnji {
+  padding-bottom: $padding-xxlarge;
+}
+
+.contract {
+  text-align: center;
+  padding-top: $padding-large;
+  width: $width-32;
+  float: left;
+}
+
+.cont {
+  text-decoration: none;
+  border-width: 3px;
+  border-color: $primary-color;
+  border-style: solid;
+  padding-top: $padding-xlarge;
+  padding-bottom: $padding-xlarge;
+  font-size: $font-size-small;
+  color: $primary-color;
+  display: block;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $link-hover-color;
+  }
+}
+
+.back-to-top {
+  text-decoration: none;
+  color: $primary-color;  // Use your primary color variable
+  font-size: $font-size-medium;
+  position: fixed;  // Fixed position to keep it visible on the screen
+  bottom: $padding-large;  // Position it at the bottom
+  right: $padding-large;  // Position it on the right
+  background-color: $background-color;  // Background color
+  padding: $padding-small;  // Padding for clickable area
+  border-radius: 5px;  // Rounded corners
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  // Optional shadow for better visibility
+  
+  &:hover {
+      background-color: darken($background-color, 10%);  // Darken background on hover
+      color: $link-hover-color;  // Change text color on hover
+  }
+}
+

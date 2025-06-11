@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css_contact/main.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap-grid.min.css">
+    <title>contactb</title>
+</head>
+<body>
+    <a name="vrh"></a>
+    <header>
+        <div class="sakri">
+          <button class="hamburger-menu">☰</button>
+          <div class="dropdown">
+            <div class="dropdown-content">
+              <ul>
+                <li><a href="prrints.html">PRINTS</a></li>
+                <li><a href="paintedb.html">BROJAČ</a></li>
+                <li><a href="https://www.instagram.com/brendannorth">INSTAGRAM</a></li>
+                <li><a href="aboutb.html">ABOUT</a></li>
+                <li><a href="contactb.html">CONTACT</a></li>
+                <li><a href="linksb.html">LINKS</a></li>
+                <li><a href="beginningsb.html">CRUD</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="navigacija">
+          <nav>
+            <ul>
+              <li><a href="prrints.html">PRINTS</a></li>
+              <li><a href="paintedb.html">BROJAČ</a></li>
+              <li><a href="https://www.instagram.com/brendannorth">INSTAGRAM</a></li>
+              <li><a href="aboutb.html">ABOUT</a></li>
+              <li><a href="contactb.html">CONTACT</a></li>
+              <li><a href="linksb.html">LINKS</a></li>
+              <li><a href="beginningsb.html">CRUD</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="brendan">
+          <a href="prrints.html">BRENDAN NØRTH</a>
+        </div>
+      </header>
+      
+    <section class="sredina">
+        <div class="naslov"><h1><a href="prrints.html">BRENDAN NØRTH</a></h1></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 contact">
+                <h2>Contact</h2><br>
+                <p>For editorial assignments, model test shoots, headshots, social content or brand photography please email:</p><br>
+                <p>bookings@brendan-north.com</p><br>
+                <p>or</p><br>
+                <p class="pls">Please complete the form below</p>
+                </div>
+            </div>
+        </div>
+         <form id="contactForm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <label for="email">Email address <span>(required)</span></label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <div id="emailError" class="error"></div>
+                    </div>
+                    <div class="col-12">
+                        <label for="subject">Subject <span>(required)</span></label><br>
+                        <input type="text" id="subject" name="subject" required><br><br>
+                    </div>
+                    <div class="col-12">
+                        <label for="message">Message <span>(required)</span></label><br>
+                        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                    </div>
+                    <div class="col-12">
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+          <div class="theme-toggle">
+  <button id="themeButton">🌞</button>
+</div>
+
+        <!-- Modal -->
+        <div id="popupModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h3>Uneseni podaci:</h3>
+                <p><strong>Email:</strong> <span id="popupEmail"></span></p>
+                <p><strong>Subject:</strong> <span id="popupSubject"></span></p>
+                <p><strong>Message:</strong> <span id="popupMessage"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="top">
+        <a href="#vrh">Back to top</a>
+    </div>
+
+    <footer>
+        <p>contact: bookings@brendan-north.com</p>
+    </footer>
+
+    <script>
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        hamburgerMenu.addEventListener('click', () => {
+            dropdownContent.classList.toggle('active');
+        });
+
+        const form = document.getElementById('contactForm');
+        const emailInput = document.getElementById('email');
+        const emailError = document.getElementById('emailError');
+        const modal = document.getElementById('popupModal');
+        const closeModal = document.getElementById('closeModal');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const email = emailInput.value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailRegex.test(email)) {
+                emailError.textContent = "Neispravno – pokušajte opet!";
+                return;
+            } else {
+                emailError.textContent = "";
+            }
+
+            document.getElementById('popupEmail').textContent = email;
+            document.getElementById('popupSubject').textContent = subject;
+            document.getElementById('popupMessage').textContent = message;
+
+            modal.style.display = "block";
+            form.reset();
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.style.display = "none";
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+
+    <script>
+      const themeButton = document.getElementById('themeButton');
+const currentTheme = localStorage.getItem('theme');
+
+// Ako postoji prethodni izbor, učitaj ga
+if (currentTheme === 'dark') {
+  document.body.classList.add('dark-theme');
+  themeButton.textContent = '🌙';
+} else {
+  themeButton.textContent = '🌞';
+}
+
+themeButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-theme');
+  
+  if (document.body.classList.contains('dark-theme')) {
+    localStorage.setItem('theme', 'dark');
+    themeButton.textContent = '🌙';
+  } else {
+    localStorage.setItem('theme', 'light');
+    themeButton.textContent = '🌞';
+  }
+});
+    </script>
+      
+</body>
+</html>

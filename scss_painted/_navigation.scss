@@ -1,0 +1,45 @@
+@import 'variables';
+
+nav li {
+  float: left;
+  padding: $spacing-small;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li a {
+  font-size: $font-size-small;
+  text-decoration: none;
+  color: $grey-color;
+}
+
+.dropbtn {
+  width: 100%;
+  background-color: $secondary-color;
+  padding: $spacing-base;
+  font-size: $font-size-small;
+  border: none;
+}
+
+.dropdown {
+  display: inline-block;
+  width: 100%;
+
+  .dropdown-content {
+    display: none;
+    text-align: center;
+
+    a {
+      color: $primary-color;
+      padding: $spacing-small $spacing-base;
+      text-decoration: none;
+      display: block;
+    }
+  }
+
+  &:hover .dropdown-content {
+    display: block;
+  }
+}

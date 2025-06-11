@@ -1,0 +1,451 @@
+@font-face {
+  font-family: "font";
+  src: url("../font/Montserrat-Regular.ttf");
+}
+body {
+  font-family: "font", sans-serif;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: font;
+}
+
+header {
+  width: 95%;
+}
+
+.sakri {
+  display: none;
+}
+
+.brendan {
+  float: left;
+  padding-top: 20px;
+}
+.brendan a {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+}
+
+.navigacija {
+  float: right;
+  padding-top: 20px;
+}
+
+.dropbtn {
+  width: 100%;
+  background-color: rgb(232, 232, 232);
+  padding: 16px;
+  font-size: 14px;
+  border: none;
+}
+
+.dropdown {
+  display: inline-block;
+  width: 100%;
+}
+.dropdown .dropdown-content {
+  display: none;
+  text-align: center;
+}
+.dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav li {
+  float: left;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li a {
+  font-size: 13px;
+  text-decoration: none;
+  color: grey;
+}
+
+.naslov {
+  text-align: center;
+  display: none;
+}
+
+h1 {
+  padding-top: 20px;
+  padding-bottom: 35px;
+  font-size: 29px;
+  font-weight: lighter;
+}
+h1 a {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: normal;
+  color: gray;
+  font-size: 25px;
+}
+
+.pls {
+  font-weight: normal;
+  color: gray;
+  padding-bottom: 30px;
+}
+
+.contact p {
+  font-weight: bold;
+}
+
+.sredina {
+  padding-top: 120px;
+}
+
+label,
+.text,
+.forma p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input[type=submit] {
+  padding: 15px;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+}
+input[type=submit]:hover {
+  opacity: 0.7;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  padding: 15px;
+  font-size: 16px;
+  width: 90%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+span {
+  font-size: 15px;
+  color: grey;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: right;
+}
+footer p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.top {
+  display: none;
+}
+
+header {
+  width: 95%;
+}
+
+.brendan {
+  float: left;
+  padding-top: 24px;
+}
+.brendan a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #000000;
+}
+
+.navigacija {
+  float: right;
+  padding-top: 24px;
+}
+
+nav li {
+  float: left;
+  padding: 8px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #333333;
+}
+
+.dropbtn {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 16px;
+  font-size: 12px;
+  border: none;
+}
+
+.dropdown {
+  display: inline-block;
+  width: 100%;
+}
+.dropdown .dropdown-content {
+  display: none;
+  text-align: center;
+}
+.dropdown .dropdown-content a {
+  color: #000000;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+input[type=submit] {
+  padding: 16px;
+  font-size: 24px;
+  background-color: #000000;
+  color: #ffffff;
+}
+input[type=submit]:hover {
+  opacity: 0.7;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  padding: 16px;
+  font-size: 16px;
+  width: 90%;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.contact p {
+  font-weight: bold;
+}
+
+footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: right;
+}
+footer p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+  .brendan {
+    display: none;
+  }
+  .brendan2 {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .top {
+    clear: both;
+    text-align: center;
+    display: block;
+    padding-top: 50px;
+  }
+  .top a {
+    text-decoration: none;
+    color: grey;
+    font-size: 22px;
+  }
+  footer {
+    text-align: center;
+  }
+  .sakri {
+    display: block;
+  }
+  .navigacija {
+    display: none;
+  }
+  header {
+    width: 100%;
+  }
+  .sredina {
+    padding-top: 50px;
+  }
+  .naslov {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
+.hamburger-menu {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 992px) {
+  .hamburger-menu {
+    display: block;
+    z-index: 1000;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(232, 232, 232);
+    width: 100%;
+    left: 0;
+    top: 60px;
+    z-index: 999;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .dropdown-content ul {
+    padding: 0;
+  }
+
+  .dropdown-content ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .dropdown-content ul li:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+  }
+
+  .dropdown-content.active {
+    display: block;
+  }
+
+  .navigacija {
+    display: none;
+  }
+
+  .brendan {
+    text-align: center;
+    float: none;
+    display: block;
+  }
+}
+
+.modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.6);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 500px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            text-align: center;
+            position: relative;
+        }
+
+        .close {
+            color: #aaa;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+/* Dark theme */
+body.dark-theme {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+header, footer, .modal-content {
+  transition: all 0.3s ease;
+}
+
+/* Da modal i header lijepo reaguju na temu */
+body.dark-theme header,
+body.dark-theme footer {
+  background-color: #1e1e1e;
+}
+
+body.dark-theme .modal-content {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#themeButton {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

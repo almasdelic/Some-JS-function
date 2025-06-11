@@ -1,0 +1,324 @@
+body {
+  font-family: "font", sans-serif;
+  color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #333333;
+}
+
+h1 {
+  font-size: 29px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "font", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.sakri {
+  display: none;
+}
+
+.top {
+  display: none;
+}
+
+@font-face {
+  font-family: "font";
+  src: url("../font/Montserrat-Regular.ttf");
+}
+header {
+  max-width: 95%;
+}
+
+.brendan {
+  float: center;
+  padding-top: 20px;
+}
+.brendan a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #000000;
+}
+
+.navigacija {
+  float: right;
+  padding-top: 20px;
+}
+
+nav li {
+  float: left;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li a {
+  font-size: 13px;
+  text-decoration: none;
+  color: grey;
+}
+
+.dropbtn {
+  width: 100%;
+  background-color: rgb(232, 232, 232);
+  padding: 20px;
+  font-size: 13px;
+  border: none;
+}
+
+.dropdown {
+  display: inline-block;
+  width: 100%;
+}
+.dropdown .dropdown-content {
+  display: none;
+  text-align: center;
+}
+.dropdown .dropdown-content a {
+  color: #000000;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.sredina {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.naslov {
+  text-align: center;
+  display: none;
+}
+
+h1 {
+  padding-top: 20px;
+  padding-bottom: 65px;
+  font-size: 29px;
+  font-weight: lighter;
+}
+h1 a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #000000;
+  font-weight: 400;
+}
+
+h2 {
+  padding-bottom: 20px;
+  font-size: 32px;
+}
+
+.padding {
+  padding-top: 20px;
+}
+
+.book {
+  padding-bottom: 30px;
+  font-size: 18px;
+}
+
+.contact {
+  width: 115px;
+}
+
+.button {
+  text-decoration: none;
+  border-width: 3px;
+  border-color: #000000;
+  border-style: solid;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 15px;
+  color: #000000;
+  display: block;
+}
+.button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+span {
+  font-weight: lighter;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: right;
+}
+footer p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+  .brendan {
+    display: none;
+  }
+  .brendan2 {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .top {
+    clear: both;
+    text-align: center;
+    display: block;
+    padding-top: 50px;
+  }
+  .top a {
+    text-decoration: none;
+    color: grey;
+    font-size: 30px;
+  }
+  footer {
+    text-align: center;
+  }
+  .sakri {
+    display: block;
+  }
+  .navigacija {
+    display: none;
+  }
+  header {
+    width: 100%;
+  }
+  .sredina {
+    padding-top: 50px;
+  }
+  .naslov {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
+
+.hamburger-menu {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(232, 232, 232);
+    width: 100%;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+  }
+
+  .dropdown-content ul {
+    padding: 0;
+  }
+
+  .dropdown-content ul li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #000000;
+    font-size: 18px;
+  }
+
+  .dropdown-content.active {
+    display: block;
+  }
+
+  .navigacija {
+    display: none;
+  }
+
+  .brendan {
+    display: none;
+  }
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+/* Dark theme */
+body.dark-theme {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+header, footer, .modal-content {
+  transition: all 0.3s ease;
+}
+
+/* Da modal i header lijepo reaguju na temu */
+body.dark-theme header,
+body.dark-theme footer {
+  background-color: #1e1e1e;
+}
+
+body.dark-theme .modal-content {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#themeButton {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

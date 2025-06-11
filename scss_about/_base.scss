@@ -1,0 +1,104 @@
+@import 'variables';
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: font;
+}
+
+@font-face {
+  font-family: font;
+  src: url(../font/Montserrat-Regular.ttf);
+}
+
+body {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.sakri {
+  display: none;
+}
+
+.neboldano {
+  font-weight: lighter;
+}
+
+h1 {
+  padding-top: $padding-large;
+  padding-bottom: $padding-bottom-xxxxlarge;
+  font-size: $font-size-medium;
+  font-weight: lighter;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: $padding-top-xxxlarge;
+  font-size: $font-size-small;
+
+  a {
+    text-decoration: none;
+    font-size: $font-size-large;
+    color: $link-color;
+    font-weight: 400;
+  }
+}
+
+footer {
+  padding-top: $padding-xxlarge;
+  padding-bottom: $padding-xxlarge;
+  text-align: right;
+
+  p {
+    font-size: $font-size-xxxxxsmall;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .brendan {
+    display: none;
+  }
+
+  .brendan2 {
+    display: block;
+    text-align: center;
+    padding-top: $padding-xxlarge;
+  }
+
+  .top {
+    clear: both;
+    text-align: center;
+    display: block;
+    padding-top: $padding-top-xlarge;
+  }
+
+  .top a {
+    text-decoration: none;
+    color: $secondary-color;
+    font-size: $font-size-smaller;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .sakri {
+    display: block;
+  }
+
+  .navigacija {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .sredina {
+    padding-top: $padding-top-xlarge;
+  }
+}

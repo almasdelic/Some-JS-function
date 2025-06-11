@@ -1,0 +1,76 @@
+// Layout styles
+header {
+    width: 95%;
+  }
+  
+  .sredina {
+    max-width: 95%;
+  }
+  
+  .sakri {
+    display: none;
+  }
+  
+  .brendan {
+    float: left;
+    padding-top: 20px;
+  
+    a {
+      font-size: $font-size-large;
+      color: black;
+    }
+  }
+  
+  .navigacija {
+    float: right;
+    padding-top: 20px;
+  }
+  
+  .dropdown {
+    display: inline-block;
+    width: 100%;
+  
+    .dropbtn {
+      width: 100%;
+      background-color: $dropbtn-bg-color;
+      padding: 16px;
+      font-size: $dropbtn-font-size;
+      border: none;
+    }
+  
+    .dropdown-content {
+      display: none;
+      text-align: center;
+  
+      a {
+        color: $dropdown-content-color;
+        padding: $dropdown-content-padding;
+      }
+    }
+  
+    &:hover .dropdown-content {
+      display: block;
+    }
+  }
+  
+  nav li {
+    float: left;
+    padding: 10px;
+  }
+  
+  li a {
+    font-size: $font-size-small;
+    color: $font-color-grey;
+  }
+  
+  footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: right;
+  
+    p {
+      font-size: $font-size-footer;
+      font-weight: $font-weight-bold;
+    }
+  }
+  

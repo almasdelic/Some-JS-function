@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css_prints/main.css">
+  <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap-grid.min.css">
+  <title>Prints</title>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="sakri">
+        <button class="hamburger-menu" aria-label="Toggle menu" @click="toggleMenu">&#9776;</button>
+        <div class="dropdown">
+          <div class="dropdown-content" :class="{ active: isActive }">
+            <ul>
+              <li><a href="prrints.html">PRINTS</a></li>
+              <li><a href="paintedb.html">BROJAČ</a></li>
+              <li><a href="https://www.instagram.com/brendannorth">INSTAGRAM</a></li>
+              <li><a href="aboutb.html">ABOUT</a></li>
+              <li><a href="contactb.html">CONTACT</a></li>
+              <li><a href="linksb.html">LINKS</a></li>
+              <li><a href="beginningsb.html">CRUD</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="navigacija">
+        <nav>
+          <ul>
+            <li><a href="prrints.html">PRINTS</a></li>
+            <li><a href="paintedb.html">BROJAČ</a></li>
+            <li><a href="https://www.instagram.com/brendannorth">INSTAGRAM</a></li>
+            <li><a href="aboutb.html">ABOUT</a></li>
+            <li><a href="contactb.html">CONTACT</a></li>
+            <li><a href="linksb.html">LINKS</a></li>
+            <li><a href="beginningsb.html">CRUD</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="brendan">
+        <a href="prrints.html">BRENDAN NØRTH</a>
+      </div>
+    </header>
+  </div>
+
+  
+      
+    <section class="sredina">
+        <div class="naslov"><a href="prrints.html">BRENDAN NØRTH</a></div>
+        <h1><span class="neboldano">Limited </span>Fine Art Prints</h1>
+        <div class="slider">
+  <button class="prev">&#10094;</button>
+  <div class="slide-container">
+    <img src="img/VR_SUMMERRR_WALK-t2.jpeg" alt="">
+    <img src="img/VR_SUMMERRR_WALK-t2.jpeg" alt="">
+    <img src="img/VR_SUMMERRR_WALK-t2.jpeg" alt="">
+  </div>
+  <button class="next">&#10095;</button>
+</div>
+        <div class="shop">
+            <a href="" class="gumb">SHOP ON ARTSY</a>
+        </div>
+    
+    <!--<form id="popupForm">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 fname">
+        <label for="fname">First name</label><br>
+        <input type="text" id="fname" name="fname" required>
+      </div>
+
+      <div class="col-6 lname">
+        <label for="lname">Last name</label><br>
+        <input type="text" id="lname" name="lname" required>
+      </div>
+    </div>
+
+    <div class="col-12 email">
+      <label for="email">Email <span>(required)</span></label><br>
+      <input type="email" id="email" name="email" required>
+      <div id="emailError" class="error"></div>
+    </div>
+
+    <div class="col-12 print">
+      <label for="print">Print title (rotate mobile to view titles) <span>(required)</span></label><br>
+      <input type="text" id="print" name="print" required>
+    </div>
+
+    <div class="col-12 poruka">
+      <label for="message">Message <span>(required)</span></label><br>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+
+    <div class="col-12 submit">
+      <input type="submit" value="Submit">
+    </div>
+  </div>
+</form> -->
+
+
+<!-- Modal -->
+<!--<div id="popupModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <h3>Uneseni podaci:</h3>
+    <p><strong>First name:</strong> <span id="popupFname"></span></p>
+    <p><strong>Last name:</strong> <span id="popupLname"></span></p>
+    <p><strong>Email:</strong> <span id="popupEmail"></span></p>
+    <p><strong>Print title:</strong> <span id="popupPrint"></span></p>
+    <p><strong>Message:</strong> <span id="popupMessage"></span></p>
+  </div>
+</div>-->
+
+          <div class="theme-toggle">
+  <button id="themeButton">🌞</button>
+</div>
+
+
+    <article class="paragrafi">
+        <br><h3>FAQ</h3><br>
+        <section class="p1">
+            <br><h4>What are the editions and sizes?</h4><br>
+            <p>Most pieces are editions of only 7 prints available in 3 sizes. For example, the unframed sizes for the square images are 18x18 inch, 30x30 inch, 40x40 inch. A signed and numbered Certificate of Authenticity is provided with your print for your records.</p>
+        </section>
+        <section class="p2">
+            <br><h4>What is the price?</h4><br>
+            <p>Pricing is set according to image demand/availability and is based on the desired size. Please inquire for exact details. Bundle pricing is also available for orders of multiple prints.</p>
+        </section>
+        <section class="p3">
+            <br><h4>Is shipping available in my country?</h4><br>
+            <p>Shipping is available worldwide. Unframed prints will ship directly from our professional photo lab in Los Angeles in dent resistant tubes..</p>
+        </section>
+        <section class="p4">
+            <br><h4>Do they come framed?</h4><br>
+            <p>If you are located in Southern California, expert framing is available. If you are located elsewhere, we will provide assistance to find the right framer for you in your area. Shipping fully framed prints carries a risk of damage in transit.</p>
+        </section>
+        <section class="p5">
+            <br><h4>Can I purchase with Cryptocurrency?</h4><br>
+            <p>Yes. We are now accepting Bitcoin, Ethereum, and USDC as payment. Please inquire about purchasing your print with crypto.</p>
+        </section>
+    </article>
+    <h2>Framed <span class="neboldano">Examples</span></h2>
+    <div class="container all">
+      <div id="app" class="container all">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <img src="img/EE8A2907-53D9-4377-89C8-57E4629E669F.jpeg" alt="" class="slike" onclick="openModal(this)">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <img src="img/IMG_0509.jpeg" alt="" class="slike" onclick="openModal(this)">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <img src="img/IMG_1378.jpg" alt="" class="slike"  onclick="openModal(this)">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <img src="img/IMG_2140.jpeg" alt="" class="slike"  onclick="openModal(this)">
+            </div>  
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <img src="img/IMG_2148.jpeg" alt="" class="slike"  onclick="openModal(this)">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <img src="img/IMG_2150.jpeg" alt="" class="slike" onclick="openModal(this)">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <img src="img/IMG_2156.jpeg" alt=""class="slike" onclick="openModal(this)">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <img src="img/IMG_2157.jpeg" alt="" class="slike" onclick="openModal(this)">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <img src="img/IMG_2188.jpeg" alt="" class="slike" onclick="openModal(this)">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <img src="img/IMG_6F628C87EEF8-1.jpeg" alt="" class="slike" onclick="openModal(this)">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <img src="img/IMG_F0580325CA8E-1.jpeg" alt="" class="slike" onclick="openModal(this)">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <img src="img/new+room-6.jpeg" alt="" class="slike" onclick="openModal(this)">
+            </div>
+        </div>
+
+        <!-- Modal za sve slike -->
+        <div id="myModal" class="modal" onclick="closeModal()">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="imgModal">
+        </div>
+
+    </div>
+  </div>
+    <div class="videi">
+        <div class="video1">
+            <video width="100%" controls src="img/Boat_13.mp4"></video>
+        </div>
+        <div class="video2">
+            <video width="100%" controls src="img/Boat_13.mp4"></video>
+        </div>
+    </div>
+    <div class="top">
+        <a href="#vrh">Back to top</a>
+    </div>
+    </section>
+    <footer>
+        <p>contact: bookings@brendan-north.com</p>
+    </footer>
+
+    
+  <!--<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data() {
+        return {
+          isActive: false,
+        };
+      },
+      methods: {
+        toggleMenu() {
+          this.isActive = !this.isActive;
+        },
+      },
+    });
+  </script>-->
+
+  <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function () {
+          const dropdownContent = document.querySelector('.dropdown-content');
+          dropdownContent.classList.toggle('active');
+        });
+      </script>
+      
+
+  <script>
+    const container = document.querySelector('.slide-container');
+    const images = document.querySelectorAll('.slide-container img');
+    let index = 0;
+
+    document.querySelector('.next').addEventListener('click', () => {
+      index = (index + 1) % images.length;
+      container.style.transform = `translateX(-${index * 100}%)`;
+    });
+
+    document.querySelector('.prev').addEventListener('click', () => {
+      index = (index - 1 + images.length) % images.length;
+      container.style.transform = `translateX(-${index * 100}%)`;
+    });
+  </script>
+
+  <script>
+function openModal(imgElement) {
+  const modal = document.getElementById("myModal");
+  const modalImg = document.getElementById("imgModal");
+  modal.style.display = "block";
+  modalImg.src = imgElement.src;
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+</script>
+
+<script>
+document.addEventListener('keydown', function(e) {
+  if (e.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+<script>
+  const themeButton = document.getElementById('themeButton');
+const currentTheme = localStorage.getItem('theme');
+
+// Ako postoji prethodni izbor, učitaj ga
+if (currentTheme === 'dark') {
+  document.body.classList.add('dark-theme');
+  themeButton.textContent = '🌙';
+} else {
+  themeButton.textContent = '🌞';
+}
+
+themeButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-theme');
+  
+  if (document.body.classList.contains('dark-theme')) {
+    localStorage.setItem('theme', 'dark');
+    themeButton.textContent = '🌙';
+  } else {
+    localStorage.setItem('theme', 'light');
+    themeButton.textContent = '🌞';
+  }
+});
+
+</script>
+
+</body>
+</html>

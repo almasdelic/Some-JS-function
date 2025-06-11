@@ -1,0 +1,50 @@
+@import 'variables';
+
+@media screen and (max-width: 992px) {
+  .brendan {
+    display: none;
+  }
+  
+  .brendan2 {
+    display: block;
+    text-align: center;
+    padding-top: $spacing-large;
+  }
+  
+  .top {
+    clear: both;
+    text-align: center;
+    display: block;
+    padding-top: $spacing-xlarge;
+
+    a {
+      text-decoration: none;
+      color: $grey-color;
+      font-size: $font-size-large;
+    }
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
+  .sakri {
+    display: block;
+  }
+  
+  .navigacija {
+    display: none;
+  }
+  
+  header {
+    width: 100%;
+  }
+  
+  .sredina {
+    padding-top: $spacing-xlarge;
+  }
+  
+  .naslov {
+    display: block;
+  }
+}

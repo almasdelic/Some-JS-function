@@ -1,0 +1,21 @@
+@import 'variables';
+
+header {
+  width: 95%;
+}
+
+.brendan {
+  float: left;
+  padding-top: $spacing-large;
+
+  a {
+    text-decoration: none;
+    font-size: $font-size-large;
+    color: $primary-color;
+  }
+}
+
+.navigacija {
+  float: right;
+  padding-top: $spacing-large;
+}

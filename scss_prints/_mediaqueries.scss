@@ -1,0 +1,40 @@
+// Media queries
+@media screen and (max-width: 992px) {
+    .top {
+      clear: both;
+      text-align: center;
+      display: block;
+      padding-top: 50px;
+  
+      a {
+        text-decoration: none;
+        color: $font-color-grey;
+        font-size: 22px;
+      }
+    }
+  
+    footer {
+      text-align: center;
+    }
+  
+    .sakri {
+      display: block;
+    }
+  
+    .navigacija {
+      display: none;
+    }
+  
+    header {
+      width: 100%;
+    }
+  
+    .brendan {
+      display: none;
+    }
+  
+    .naslov {
+      display: block;
+    }
+  }
+  

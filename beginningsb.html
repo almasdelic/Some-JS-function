@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_beginnings/main.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap-grid.min.css">
+    <title>beginnings</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="sakri">
+                <button class="hamburger-menu" @click="toggleMenu" aria-label="Toggle menu">&#9776;</button>
+                <div class="dropdown">
+                    <div class="dropdown-content" :class="{'active': isMenuOpen}">
+                        <ul>
+                            <li><a href="prrints.html">PRINTS</a></li>
+                            <li><a href="paintedb.html">BROJAČ</a></li>
+                            <li><a href="https://www.instagram.com/brendannorth">INSTAGRAM</a></li>
+                            <li><a href="aboutb.html">ABOUT</a></li>
+                            <li><a href="contactb.html">CONTACT</a></li>
+                            <li><a href="linksb.html">LINKS</a></li>
+                            <li><a href="beginningsb.html">CRUD</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navigacija">
+                <nav>
+                    <ul>
+                        <li><a href="prrints.html">PRINTS</a></li>
+                        <li><a href="paintedb.html">BROJAČ</a></li>
+                        <li><a href="https://www.instagram.com/brendannorth">INSTAGRAM</a></li>
+                        <li><a href="aboutb.html">ABOUT</a></li>
+                        <li><a href="contactb.html">CONTACT</a></li>
+                        <li><a href="linksb.html">LINKS</a></li>
+                        <li><a href="beginningsb.html">CRUD</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="brendan">
+                <a href="prrints.html">BRENDAN NØRTH</a>
+            </div>
+        </header>
+        
+        <div class="naslov">
+            <h1><a href="prrints.html">BRENDAN NØRTH</a></h1>
+        </div>
+
+        <div class="theme-toggle">
+  <button id="themeButton">🌞</button>
+</div>
+        <!--<h2>BEGINNINGS: A PHOTO STORY</h2>
+        <section class="sredina">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 par">
+                        <img src="img/par1.png" alt="">
+                        <h3>Last breath <span>(Edition of 20)</span></h3>
+                        <p class="tekst">"Air is infinite until it's not...</p>
+                        <p class="desno">-Brendan North</p>
+                        <div class="gumbb">
+                            <a href="" class="gumb">MINT ON MAINFOLD</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 par">
+                        <img src="img/par2.png" alt="">
+                        <h2>Floodgates <span>(Edition of 20)</span></h2>
+                        <p class="tekst">"The push and pull of ocean tides...</p>
+                        <p class="desno">-Brendan North</p>
+                        <div class="gumbb">
+                            <a href="" class="gumb">MINT ON MAINFOLD</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-124 par">
+                        <img src="img/par3.png" alt="">
+                        <h2>Brace yourself <span>(Purchased as a 1/1)</span></h2>
+                        <p class="tekst">"It falls apart in a moment...</p>
+                        <p class="desno">-Brendan North</p>
+                    </div>
+                </div>
+            </div>
+            <h4>The story</h4>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 story">
+                        <p>The story of how this shoot from 2016 saved my photography career...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="top">
+            <a href="#vrh">Back to top</a>
+        </div>
+        <footer>
+            <p>contact: bookings@brendan-north.com</p>
+        </footer>
+    </div> -->
+        <div>
+            <input type="text" id="itemInput" placeholder="Enter item...">
+            <button onclick="addItem()">Dodaj</button>
+
+            <ul id="itemList"></ul>
+        </div>
+         
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!--<script>
+        new Vue({
+            el: '#app',
+            data: {
+                isMenuOpen: false
+            },
+            methods: {
+                toggleMenu() {
+                    this.isMenuOpen = !this.isMenuOpen;
+                }
+            }
+        });
+    </script> -->
+
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function () {
+          const dropdownContent = document.querySelector('.dropdown-content');
+          dropdownContent.classList.toggle('active');
+        });
+      </script>
+
+       
+
+     <script>
+    function addItem() {
+      const input = document.getElementById("itemInput");
+      const value = input.value.trim();
+      if (value === "") return;
+
+      const li = document.createElement("li");
+
+      const span = document.createElement("span");
+      span.textContent = value;
+
+      const actions = document.createElement("div");
+      actions.className = "actions";
+
+      const editBtn = document.createElement("button");
+      editBtn.textContent = "Edit";
+      editBtn.onclick = () => {
+        const newValue = prompt("Edit item:", span.textContent);
+        if (newValue !== null && newValue.trim() !== "") {
+          span.textContent = newValue.trim();
+        }
+      };
+
+      const deleteBtn = document.createElement("button");
+      deleteBtn.textContent = "Delete";
+      deleteBtn.onclick = () => li.remove();
+
+      actions.appendChild(editBtn);
+      actions.appendChild(deleteBtn);
+
+      li.appendChild(span);
+      li.appendChild(actions);
+
+      document.getElementById("itemList").appendChild(li);
+      input.value = "";
+    }
+  </script>
+
+  <script>
+    const themeButton = document.getElementById('themeButton');
+const currentTheme = localStorage.getItem('theme');
+
+// Ako postoji prethodni izbor, učitaj ga
+if (currentTheme === 'dark') {
+  document.body.classList.add('dark-theme');
+  themeButton.textContent = '🌙';
+} else {
+  themeButton.textContent = '🌞';
+}
+
+themeButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-theme');
+  
+  if (document.body.classList.contains('dark-theme')) {
+    localStorage.setItem('theme', 'dark');
+    themeButton.textContent = '🌙';
+  } else {
+    localStorage.setItem('theme', 'light');
+    themeButton.textContent = '🌞';
+  }
+});
+  </script>
+
+
+</body>
+</html>

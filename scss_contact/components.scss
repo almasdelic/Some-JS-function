@@ -1,0 +1,37 @@
+@import 'variables';
+
+input[type=submit] {
+  padding: $spacing-base;
+  font-size: $font-size-large;
+  background-color: $primary-color;
+  color: $background-color;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  padding: $spacing-base;
+  font-size: $font-size-base;
+  width: 90%;
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
+}
+
+.contact p {
+  font-weight: bold;
+}
+
+footer {
+  padding-top: $spacing-xlarge;
+  padding-bottom: $spacing-xlarge;
+  text-align: right;
+
+  p {
+    font-size: $font-size-base;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,41 @@
+@import 'variables';
+
+nav li {
+  float: left;
+  padding: $padding-small;
+}
+
+li a {
+  font-size: $font-size-xxxxsmall;
+  text-decoration: none;
+  color: $secondary-color;
+}
+
+.dropdown {
+  display: inline-block;
+  width: 100%;
+
+  .dropbtn {
+    width: 100%;
+    background-color: $background-color;
+    padding: $padding-medium;
+    font-size: $font-size-xxxsmall;
+    border: none;
+  }
+
+  .dropdown-content {
+    display: none;
+    text-align: center;
+
+    a {
+      color: $primary-color;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+  }
+
+  &:hover .dropdown-content {
+    display: block;
+  }
+}
